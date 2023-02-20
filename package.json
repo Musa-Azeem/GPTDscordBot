@@ -1,0 +1,24 @@
+{
+  "name": "gptdscordbot",
+  "version": "1.0.0",
+  "description": "1. `pip install openai`\r 2. go [here](https://platform.openai.com/account/api-keys) to create auth key\r 3.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Musa-Azeem/GPTDscordBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Musa-Azeem/GPTDscordBot/issues"
+  },
+  "homepage": "https://github.com/Musa-Azeem/GPTDscordBot#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.1.0"
+  }
+}
