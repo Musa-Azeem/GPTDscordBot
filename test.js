@@ -5,13 +5,14 @@ var fs = require('fs');
 
 async function helloWorld() {
   const configuration = new Configuration({
-    apiKey: process.env.KEY,
+    apiKey: process.env.AI_KEY,
   });
   const openai = new OpenAIApi(configuration);
   try {
     const completion = await openai.createCompletion({
       model: "text-curie-001",
-      prompt: "how tall is the eiffel tower",
+      prompt: "who is musa",
+      max_tokens: 1800
     });
     console.log(completion.data.choices[0]);
   } catch (error) {
