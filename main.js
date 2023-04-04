@@ -21,7 +21,7 @@ client.on('messageCreate', async (msg) => {
 	const content = msg.content
 	if (content.startsWith('/gpt')) {
 		prompt = content.substring(5)
-		console.log(`Prompt ${prompt}`)
+		console.log(`\n\nPrompt ${prompt}`)
 
 		gptRes = await sendPromptToGPT(prompt)
 		msg.reply(gptRes)
